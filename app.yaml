@@ -4,23 +4,6 @@ env:
     valueFrom:
       resourceName: api-key-secret
       resourceField: value
-  - name: POSTGRES_USER
-    valueFrom:
-      resourceName: postgres
-      resourceField: username
-  - name: POSTGRES_PASSWORD
-    valueFrom:
-      resourceName: postgres
-      resourceField: password
-  - name: POSTGRES_HOST
-    valueFrom:
-      resourceName: postgres
-      resourceField: host
-  - name: POSTGRES_PORT
-    valueFrom:
-      resourceName: postgres
-      resourceField: port
-
 resources:
   - name: api-key-secret
     secret:
