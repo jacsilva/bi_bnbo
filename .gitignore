@@ -9,6 +9,11 @@ config/*.jar
 output/
 *.json
 
+# Artefatos do dbt (build/cache/logs)
+dbt/logs/
+dbt/target/
+dbt/dbt_packages/
+
 # Ambiente virtual
 .venv/
 venv/
